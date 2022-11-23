@@ -3,7 +3,7 @@ React Typescript with Next.js lab to demonstrate rendering issues and solutions
 
 ## How to run this repository
 
-Visit the [Next.js](https://nextjs.org/) website to see an example in action.
+Visit the [rubenmora.com/apps/react-rendering-lab](https://rubenmora.com/apps/react-rendering-lab) website to see an example in action.
 
 Clone this repository:
 
@@ -62,5 +62,5 @@ The rendering components have names of AWS services only for didactic purposes, 
 - SWC/Jest to improve the speed of tests
 - React Testing Library
 
-## More information in the blog rubenmora.com/blog
+## More information in the blog [rubenmora.com/blog](https://rubenmora.com/blog)
 [Article to discuss common rendering issues and solutions in react ](https://rubenmora.com/blog/react-rendering-lab)
