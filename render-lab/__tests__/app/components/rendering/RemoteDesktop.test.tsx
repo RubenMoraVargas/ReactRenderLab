@@ -17,7 +17,7 @@ describe('RemoteDesktop Component tests', () => {
   it('should update as expected', () => {
     render(<RemoteDesktop />)
 
-    const updateButtonFound =  screen.getAllByText(/Update/i)[0]
+    const updateButtonFound = screen.getAllByText(/Update/i)[0]
     expect(updateButtonFound).toBeVisible()
     act(() => {
       updateButtonFound.click()

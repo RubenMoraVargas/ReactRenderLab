@@ -7,13 +7,9 @@ export const HomeFS = () => {
   const [instances, setInstances] = useState(1)
   return (
     <VisualComponent title="Home FS">
-      <h4 className="-mt-2 mb-1  font-thin">
-        {instances}
-      </h4>
+      <h4 className="-mt-2 mb-1  font-thin">{instances}</h4>
 
-      <Button onClick={() => setInstances(getRandomNumber(100))}>
-        Update
-      </Button>
+      <Button onClick={() => setInstances(getRandomNumber(100))}>Update</Button>
     </VisualComponent>
   )
 }

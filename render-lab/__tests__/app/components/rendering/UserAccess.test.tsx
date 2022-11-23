@@ -31,7 +31,7 @@ describe('UserAccess Component tests', () => {
 
   it('Should problem note when optimizeContextValue is false', () => {
     render(<UserAccess />)
-    const problemNote  = screen.queryByText(/Oh no, this component update its child without reason/i)
+    const problemNote = screen.queryByText(/Oh no, this component update its child without reason/i)
     expect(problemNote).toBeVisible()
   })
 })

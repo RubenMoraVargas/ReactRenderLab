@@ -19,6 +19,5 @@ describe('Navbar Component tests', () => {
       name: /optimize/i
     })
     expect(toggleFound).toBeVisible()
-    
   })
 })

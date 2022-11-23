@@ -16,12 +16,11 @@ describe('Storage Component tests', () => {
 
     const HomeFS = screen.getByText(/Home FS/i)
     expect(HomeFS).toBeVisible()
-
   })
   it('should update as expected', () => {
     render(<Storage />)
 
-    const updateButtonFound =  screen.getAllByText(/Update/i)[0]
+    const updateButtonFound = screen.getAllByText(/Update/i)[0]
     expect(updateButtonFound).toBeVisible()
     act(() => {
       updateButtonFound.click()
@@ -32,7 +31,7 @@ describe('Storage Component tests', () => {
 
   it('Should problem note when optimizeContextValue is false', () => {
     render(<Storage />)
-    const problemNote  = screen.queryByText(/S3 Service generate update these components unnecessarily/i)
+    const problemNote = screen.queryByText(/S3 Service generate update these components unnecessarily/i)
     expect(problemNote).toBeVisible()
   })
 })

@@ -9,7 +9,7 @@ export const UserAccess = () => {
   const [instances, setInstances] = useState(1)
 
   return (
-    <VisualComponent title="User Access" problemNote="Oh no, this component update its child without reason"  >
+    <VisualComponent title="User Access" problemNote="Oh no, this component update its child without reason">
       <h4 className="-mt-2 mb-1  font-thin"> {instances}</h4>
 
       <Button onClick={() => setInstances(getRandomNumber(100))}>Update</Button>

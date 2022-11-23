@@ -17,7 +17,7 @@ describe('HomeFS Component tests', () => {
   it('should update as expected', () => {
     render(<HomeFS />)
 
-    const updateButtonFound =  screen.getAllByText(/Update/i)[0]
+    const updateButtonFound = screen.getAllByText(/Update/i)[0]
     expect(updateButtonFound).toBeVisible()
     act(() => {
       updateButtonFound.click()

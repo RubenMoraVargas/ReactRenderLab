@@ -28,7 +28,7 @@ describe('S3Service Component tests', () => {
     const instancesHeaderFound = screen.getAllByRole('heading')[0]
     expect(instancesHeaderFound).toBeVisible()
   })
-  it('Not show in child\'s the optimization titles when optimizeContextValue is false', () => {
+  it("Not show in child's the optimization titles when optimizeContextValue is false", () => {
     render(
       <OptimizeProvider>
         <S3Service />
@@ -40,7 +40,7 @@ describe('S3Service Component tests', () => {
     const StorageOptimize = screen.queryByText(/Use memo, prevent parent update/i)
     expect(StorageOptimize).not.toBeInTheDocument()
   })
-  it('Show in child\'s the optimization when optimizeContextValue is true', () => {
+  it("Show in child's the optimization when optimizeContextValue is true", () => {
     render(
       <OptimizeProvider>
         <Toggle />

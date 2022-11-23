@@ -1,5 +1,5 @@
 import { createContext, Dispatch, SetStateAction, useContext, useState } from 'react'
- 
+
 export interface ContextState {
   optimizeContextValue: boolean
   setOptimizeContextValue: Dispatch<SetStateAction<boolean>>

@@ -7,7 +7,6 @@ describe('VisualComponent Component tests', () => {
     render(<VisualComponent title="Test title" />)
     const title = screen.getByText(/Test title/i)
     expect(title).toBeVisible()
-
   })
   it('should title and optimizationNote', () => {
     render(<VisualComponent title="Test title" optimizationNote="Test optimizationNote" />)

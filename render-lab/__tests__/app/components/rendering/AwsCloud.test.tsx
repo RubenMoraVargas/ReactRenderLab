@@ -29,8 +29,8 @@ describe('AwsCloud Component tests', () => {
     expect(instancesHeaderFound).toBeVisible()
   })
   it('Should problem note when optimizeContextValue is false', () => {
-    render(<AwsCloud />) 
-    const problemNote  = screen.queryByText(/Oh no, this component redraw all children, when your state change!/i)
+    render(<AwsCloud />)
+    const problemNote = screen.queryByText(/Oh no, this component redraw all children, when your state change!/i)
     expect(problemNote).toBeVisible()
   })
 })

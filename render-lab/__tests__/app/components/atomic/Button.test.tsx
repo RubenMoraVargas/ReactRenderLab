@@ -2,13 +2,14 @@ import React from 'react'
 import Button from './../../../../src/app/components/atomic/Button'
 import { render, screen } from '@testing-library/react'
 
-describe('Button Component tests', () => { 
+describe('Button Component tests', () => {
   it('Expects to find button HTML element in the DOM', () => {
     render(
       <Button
         onClick={() => {
           return
-        }}>
+        }}
+      >
         test
       </Button>
     )

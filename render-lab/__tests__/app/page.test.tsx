@@ -30,7 +30,7 @@ describe('HomePage Component tests', () => {
     })
 
     const awsCloudComponent = screen.getByText(/AWS Cloud/i)
-    expect(awsCloudComponent).toBeInTheDocument() 
+    expect(awsCloudComponent).toBeInTheDocument()
     const optimizeTitle = screen.queryByText(/Separate principal action, prevent cascade update/i)
     expect(optimizeTitle).toBeInTheDocument()
   })
